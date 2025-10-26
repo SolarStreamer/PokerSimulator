@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poker Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #1b1b1b;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .loader {
+      font-size: 3rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.2; transform: scale(0.95); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 0.2; transform: scale(0.95); }
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "poker.html";
+    }, 3000); // Redirect after 3 seconds
+  </script>
+</head>
+<body>
+  <div class="loader">A♤ A♡ A◇ A♧</div>
+</body>
+</html>
